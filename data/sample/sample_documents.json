@@ -1,0 +1,42 @@
+[
+  {
+    "doc_id": "doc_001",
+    "text": "Apple Inc., headquartered in Cupertino, California, reported record quarterly revenue of $123.9 billion for Q1 2024. CEO Tim Cook announced the company's expansion into artificial intelligence, partnering with OpenAI to integrate advanced language models into iOS 18. The partnership was finalized on March 15, 2024, at Apple Park.",
+    "metadata": {
+      "source": "financial_report",
+      "category": "technology"
+    }
+  },
+  {
+    "doc_id": "doc_002",
+    "text": "Dr. Sarah Johnson, a senior researcher at Massachusetts Institute of Technology (MIT), published a groundbreaking study on quantum computing applications in drug discovery. The research, funded by the National Institutes of Health with a $2.5 million grant, was conducted in collaboration with Pfizer Inc. and Google DeepMind. The findings were presented at the International Conference on Machine Learning (ICML) held in Vienna, Austria on July 23, 2024.",
+    "metadata": {
+      "source": "academic_paper",
+      "category": "research"
+    }
+  },
+  {
+    "doc_id": "doc_003",
+    "text": "Tesla Motors announced the opening of its new Gigafactory in Austin, Texas, creating approximately 10,000 jobs in the region. The $5.5 billion facility, designed by architect Norman Foster, will produce the Cybertruck and next-generation battery cells. Elon Musk stated that production would begin in Q2 2024, with an annual capacity of 500,000 vehicles. The project received $64 million in tax incentives from the State of Texas.",
+    "metadata": {
+      "source": "news_article",
+      "category": "automotive"
+    }
+  },
+  {
+    "doc_id": "doc_004",
+    "text": "The European Central Bank (ECB), led by President Christine Lagarde, announced a 25 basis point interest rate cut on September 12, 2024, bringing the main refinancing rate to 3.50%. The decision was influenced by declining inflation across the Eurozone, which fell to 2.2% in August 2024. Economists at Goldman Sachs and JPMorgan Chase predicted further rate cuts in the coming quarters, potentially reaching 2.75% by mid-2025.",
+    "metadata": {
+      "source": "financial_news",
+      "category": "finance"
+    }
+  },
+  {
+    "doc_id": "doc_005",
+    "text": "Microsoft Corporation acquired Activision Blizzard for $68.7 billion on October 13, 2023, marking the largest acquisition in gaming history. CEO Satya Nadella emphasized the strategic importance of the deal for Microsoft's gaming division, Xbox. The acquisition includes popular franchises such as Call of Duty, World of Warcraft, and Candy Crush. The Federal Trade Commission (FTC) initially challenged the deal but ultimately approved it after Microsoft agreed to licensing terms with Sony PlayStation and Nintendo.",
+    "metadata": {
+      "source": "business_news",
+      "category": "technology"
+    }
+  }
+]

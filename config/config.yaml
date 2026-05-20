@@ -1,0 +1,45 @@
+# =============================================================================
+# NLP Pipeline Configuration
+# =============================================================================
+# Configuration for the Structured Information Extraction Pipeline
+# Adjust parameters based on your hardware and requirements.
+
+# Preprocessing Configuration
+preprocessor:
+  spacy_model: "en_core_web_trf"        # SpaCy model (en_core_web_sm for lightweight)
+  max_length: 1000000                    # Maximum document length in characters
+  custom_stop_words: []                  # Additional stop words
+  disable_components: []                 # SpaCy components to disable
+
+# Named Entity Recognition Configuration
+ner:
+  model_name: "dslim/bert-base-NER"      # Hugging Face NER model
+  spacy_model: "en_core_web_trf"         # SpaCy model for ensemble
+  confidence_threshold: 0.85             # Minimum confidence for entities
+  use_ensemble: true                     # Use both transformer + SpaCy
+  aggregation_strategy: "simple"         # Token aggregation strategy
+  device: null                           # null for auto-detection
+
+# Relation Extraction Configuration
+relation_extraction:
+  model_name: "facebook/bart-large-mnli" # Zero-shot classification model
+  confidence_threshold: 0.70             # Minimum confidence for relations
+  max_entity_distance: 200               # Max char distance between entities
+  max_entity_pairs: 500                  # Max entity pairs to evaluate
+
+# Post-processing Configuration
+postprocessor:
+  dedup_threshold: 0.90                  # Similarity threshold for dedup
+  min_entity_length: 2                   # Min entity text length
+  normalize_case: true                   # Normalize entity text case
+
+# Logging Configuration
+logging:
+  level: "INFO"                          # Logging level
+  log_file: null                         # Optional log file path
+
+# Output Configuration
+output:
+  format: "json"                         # Output format (json/jsonl)
+  output_dir: "./output"                 # Output directory
+  save_intermediate: false               # Save intermediate results
